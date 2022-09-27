@@ -1,0 +1,87 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    width: 100%;
+    height: 68px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 17px 0 43px 0;
+    
+    position: relative;
+}
+
+.header__left,
+.header__right {
+    display: flex;
+    align-items: center;
+}
+
+.header__right {
+    position: relative;
+}
+
+.header__link {
+    color: $white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 14px;
+    letter-spacing: 0.48px;
+    
+    background: $dark-grey;
+
+    padding: 11px 15px 15px 15px;
+    margin-left: 29px;
+    
+    border-radius: 20px;
+
+    transition: background .2s linear;
+
+    &:hover {
+        background: $aquamarine;
+        color: $dark-grey;
+    }
+
+    @include breakpoint($monitor1440-bp) {
+        font-size: 13px;
+    }
+
+    @include breakpoint($notebook-bp) {
+        margin-right: 78px;
+    }
+
+    @include breakpoint($tablet-bp) {
+        margin-right: 58px;
+        font-size: 12px;
+        line-height: 120%;
+        padding: 10px 14px 14px 14px;
+    }
+
+    @include breakpoint($mobile-bp) {
+        display: none;
+    }
+
+    &--fixed {
+        display: none;
+
+        position: fixed;
+        bottom: 4%;
+        left: 50%;
+        z-index: 5;
+
+        margin-left: -65px;
+        
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .7);
+
+        @include breakpoint($mobile-bp) {
+            display: block;
+        }
+    }
+}

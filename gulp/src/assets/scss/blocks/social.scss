@@ -1,0 +1,38 @@
+.social {
+    display: flex;
+
+    @include breakpoint ($notebook-bp) {
+        display: none;
+    }
+}
+
+.social__item {
+    margin-right: 19px;
+}
+
+.social__link {
+
+    svg {
+        path {
+            fill: $black;
+
+            transition: fill .2s linear;
+        }
+    }
+
+    &:hover {
+
+        svg {
+            path {
+                fill: $aquamarine;
+            }
+        }
+    }
+
+    @include breakpoint($monitor1440-bp) {
+        svg {
+            width: 18px;
+            height: 18px;
+        }
+    }
+}

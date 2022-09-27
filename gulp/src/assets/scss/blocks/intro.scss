@@ -1,0 +1,240 @@
+.intro {
+    display: flex;
+    justify-content: center;
+
+    padding-bottom: 221px;
+
+    @include breakpoint($mobile-bp) {
+        padding-bottom: 105px;
+    }
+}
+
+.intro__inner {
+    width: 100%;
+    display: flex;
+
+    @include breakpoint($tablet-bp) {
+        justify-content: center;
+    }
+}
+
+.intro__left {
+    width: 44.9%;
+
+    margin-top: 178px;
+
+    @include breakpoint($notebook-bp) {
+        margin-top: 105px;
+    }
+
+    @include breakpoint($tablet-bp) {
+        width: auto;
+    }
+
+    @include breakpoint($mobile-bp) {
+        padding-left: 0;
+        margin-top: 50px;
+    }
+}
+
+.intro__right {
+    width: 55.1%;
+
+    margin-top: 50px;
+    padding-left: 6.9%;
+
+    @include breakpoint($tablet-bp) {
+        display: none;
+    }
+}
+
+.intro__suptitle {
+    color: $aquamarine;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 14px;
+    letter-spacing: 0.48px;
+}
+
+.intro__title {
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 64px;
+    letter-spacing: 0.48px;
+
+    margin: 1px 0 25px 0;
+
+    @include breakpoint($notebook_m-bp) {
+        font-size: 52px;
+    }
+
+    @include breakpoint($notebook-bp) {
+        font-size: 36px;
+        line-height: 120%;
+
+        margin: 1px 0 15px 0;
+    }
+
+    @include breakpoint($mobile-bp) {
+        font-size: 30px;
+    }
+}
+
+.intro__subtitle {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 26px;
+    letter-spacing: 0.48px;
+
+    @include breakpoint($notebook-bp) {
+        font-size: 13px;
+        line-height: 120%;
+    }
+
+    @include breakpoint($mobile-bp) {
+        font-size: 12px;
+    }
+}
+
+// intro blocks
+.intro__right-block1,
+.intro__right-block2 {
+    width: fit-content;
+    position: relative;
+
+    img {
+        width: 100%;
+        height: auto;
+
+        @include breakpoint($notebook_m-bp) {
+            width: 85%;
+        }
+    }
+}
+
+.intro__right-block1 {
+
+    img {
+
+        @include breakpoint($notebook-bp) {
+            width: 60%;
+        }
+    }
+}
+
+.intro__right-block2 {
+    margin: -225px 0 0 169px;
+
+    @include breakpoint($notebook_m-bp) {
+        margin: -169px 0 0 120px;
+    }
+
+    @include breakpoint($notebook-bp) {
+        margin: -115px 0 0 95px;
+    }
+}
+
+.intro__right-comment1,
+.intro__right-comment2 {
+    position: absolute;
+
+    background: rgba(255, 255, 255, 0.85);
+    box-shadow: 0px -4px 19px rgba(0, 0, 0, 0.03);
+    border-radius: 30px;
+
+    display: flex;
+    align-items: center;
+}
+
+.intro__right-comment1 {
+    width: 105px;
+    height: 33px;
+    top: 15px;
+    left: -40px;
+
+    img {
+        width: 24px;
+        height: 24px;
+
+        margin: 0 4px 0 8px;
+    }
+}
+
+.intro__right-comment2 {
+    width: 159px;
+    height: 55px;
+    bottom: 22px;
+    left: -84px;
+
+    img {
+        width: 41px;
+        height: 41px;
+
+        margin: 0 12px 0 11px;
+    }
+}
+
+.intro__right-username1 {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 11px;
+    letter-spacing: 0.48px;
+}
+
+.intro__right-user-comments1 {
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 11px;
+    letter-spacing: 0.48px;
+}
+
+.intro__right-username2 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.48px;
+}
+
+.intro__right-user-comments2 {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 0.48px;
+}
+
+
+
+// intro footer
+.intro__footer {
+    overflow: hidden;
+}
+.intro__footer-img {
+    display: grid;
+    grid-template-columns: 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr 0fr;
+    justify-content: center;
+
+    @include breakpoint($monitor1440-bp) {
+        justify-content: flex-start;
+    }
+}
+
+@keyframes move {
+	from {
+		margin-left: -112px;
+	}
+	to {
+		margin-left: 0;
+	}
+}
+
+
+  .intro__footer-img {
+    
+    @include breakpoint($monitor1440-bp) {
+        animation-direction: alternate-reverse;
+        animation-duration: 3s;
+        animation-name: move;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+  }
