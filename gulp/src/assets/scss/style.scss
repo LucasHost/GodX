@@ -1,0 +1,43 @@
+@import "vendor/reset";
+@import "mixins";
+@import "vars";
+
+body {
+    background-color: white;
+    font-family: 'Outfit', sans-serif;
+    font-size: 17px;
+    color: $dark-grey;
+
+    &.show-nav {
+        overflow: hidden;
+    }
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* blocks */
+// header
+@import "blocks/container";
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/social";
+@import "blocks/burger";
+
+// main
+@import "blocks/intro";
+@import "blocks/about";
+@import "blocks/about-nav";
+@import "blocks/about-block";
+@import "blocks/content";
+@import "blocks/faq";
+
+// footer
+@import "blocks/footer";
