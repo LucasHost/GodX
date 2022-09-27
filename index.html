@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    
+    <title>GodX</title>
+</head>
+<body>
+
+    <nav class="nav__mobile" id="navMobile">
+        <ul class="nav__list">
+            <li class="nav__item">
+                <a class="nav__link" href="#about">About us</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="#content">NFTs</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="#footer">Contact</a>
+            </li>
+        </ul> <!-- /.nav__list -->
+    </nav>
+
+    <header>
+        <div class="container">
+            <div class="header">
+                <div class="header__left">
+                    <img class="header__logo" src="/assets/images/logo.svg" alt="logo">
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a class="nav__link" href="#about">About us</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#content">NFTs</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#footer">Contact</a>
+                            </li>
+                        </ul> <!-- /.nav__list -->
+                    </nav>
+                </div> <!-- /.header__left -->
+                <div class="header__right">
+                    <ul class="social">
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <svg width="30" height="30" viewBox="0 0 18 18">
+                                    <path d="M17.171 4.93696C16.5958 5.19245 15.9773 5.36485 15.3279 5.4422C15.9906 5.04532 16.4992 4.41651 16.7389 3.6668C16.1188 4.03469 15.4324 4.3018 14.7012 4.44582C14.116 3.82215 13.2819 3.43239 12.3591 3.43239C10.5869 3.43239 9.15012 4.8692 9.15012 6.64136C9.15012 6.89282 9.17847 7.13761 9.2332 7.37247C6.56624 7.23883 4.20157 5.9614 2.6189 4.0198C2.34277 4.49357 2.18449 5.04472 2.18449 5.63304C2.18449 6.74629 2.75098 7.72841 3.612 8.30404C3.08613 8.28715 2.59112 8.14297 2.15859 7.9025C2.1583 7.91583 2.1583 7.92933 2.1583 7.94314C2.1583 9.49762 3.26444 10.7946 4.73255 11.0896C4.46325 11.1628 4.17972 11.2021 3.88702 11.2021C3.68004 11.2021 3.47913 11.1821 3.28317 11.1445C3.6917 12.4193 4.87673 13.3471 6.28068 13.373C5.18245 14.2338 3.79895 14.7467 2.29533 14.7467C2.03644 14.7467 1.78111 14.7314 1.52997 14.7019C2.95033 15.6126 4.63689 16.1437 6.44902 16.1437C12.3516 16.1437 15.579 11.2539 15.579 7.01341C15.579 6.8745 15.5762 6.73575 15.57 6.59824C16.1968 6.14587 16.7411 5.58066 17.171 4.93696Z" fill="black"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <svg width="30" height="30" viewBox="0 0 18 18">
+                                    <path d="M8.95241 5.30159C6.73019 5.30159 4.88892 7.11111 4.88892 9.36508C4.88892 11.6191 6.69844 13.4286 8.95241 13.4286C11.2064 13.4286 13.0159 11.5873 13.0159 9.36508C13.0159 7.14286 11.1746 5.30159 8.95241 5.30159ZM8.95241 11.9683C7.52384 11.9683 6.34923 10.7937 6.34923 9.36508C6.34923 7.93651 7.52384 6.76191 8.95241 6.76191C10.381 6.76191 11.5556 7.93651 11.5556 9.36508C11.5556 10.7937 10.381 11.9683 8.95241 11.9683Z" fill="black"/>
+                                    <path d="M13.1745 6.12699C13.683 6.12699 14.0952 5.7148 14.0952 5.20635C14.0952 4.6979 13.683 4.28572 13.1745 4.28572C12.6661 4.28572 12.2539 4.6979 12.2539 5.20635C12.2539 5.7148 12.6661 6.12699 13.1745 6.12699Z" fill="black"/>
+                                    <path d="M15.5555 2.8254C14.7301 1.96826 13.5555 1.52381 12.2222 1.52381H5.68252C2.92062 1.52381 1.07935 3.36508 1.07935 6.12699V12.6349C1.07935 14 1.52379 15.1746 2.41268 16.0317C3.26982 16.8571 4.41268 17.2698 5.71427 17.2698H12.1905C13.5555 17.2698 14.6984 16.8254 15.5238 16.0317C16.3809 15.2064 16.8254 14.0317 16.8254 12.6667V6.12699C16.8254 4.79365 16.3809 3.6508 15.5555 2.8254ZM15.3651 12.6667C15.3651 13.6508 15.0793 14.4444 14.5079 14.9841C13.9365 15.5238 13.1428 15.8095 12.1905 15.8095H5.71427C4.76189 15.8095 3.96823 15.5238 3.39681 14.9841C2.82538 14.4127 2.53966 13.619 2.53966 12.6349V6.12699C2.53966 5.1746 2.82538 4.38095 3.39681 3.80953C3.93649 3.26984 4.76189 2.98413 5.71427 2.98413H12.2539C13.2063 2.98413 14 3.26984 14.5714 3.84127C15.1111 4.4127 15.4286 5.20635 15.4286 6.12699V12.6667H15.3651Z" fill="black"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="#">
+                                <svg width="30" height="30" viewBox="0 0 18 18">
+                                    <path d="M12.8365 6.90212H10.4092V5.31018C10.4092 4.71233 10.8054 4.57295 11.0845 4.57295C11.3629 4.57295 12.7974 4.57295 12.7974 4.57295V1.94469L10.4384 1.93548C7.81965 1.93548 7.2237 3.89572 7.2237 5.15016V6.90212H5.70923V9.61039H7.2237C7.2237 13.0861 7.2237 17.2739 7.2237 17.2739H10.4092C10.4092 17.2739 10.4092 13.0448 10.4092 9.61039H12.5586L12.8365 6.90212Z" fill="black"/>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <a class="header__link" href="#">View on OpenSea</a>
+                </div> <!-- /.header__right -->
+                <button class="burger" type="button" id="navToggle">
+                    <span>Открыть навигацию</span>
+                </button>
+            </div> <!-- /.header -->
+        </div> <!-- /.container -->
+    </header>
+
+    <main class="main">
+        
+        <a class="header__link  header__link--fixed" href="#">View on OpenSea</a>
+        
+        <div class="intro">
+            <div class="container">
+                <div class="intro__inner">
+                    <div class="intro__left">
+                        <h3 class="intro__suptitle">EXTRAORDINARY NFTs</h3>
+                        <h1 class="intro__title">Change your<br>Digital Experience</h1>
+                        <h2 class="intro__subtitle">Suspendisse sem neque, auctor a elementum ut,<br>varius vel leo. Donec diam arcu, porta et magna at</h2>
+                    </div> <!-- /.intro__left -->
+                    <div class="intro__right">
+                        <div class="intro__right-block1">
+                            <img src="assets/images/intro-img1.png" alt="image">
+                            <div class="intro__right-comment1">
+                                <img src="assets/images/intro-user1.png" alt="image">
+                                <div class="intro__right-user-data">
+                                    <h3 class="intro__right-username1">Lee Stone</h3>
+                                    <p class="intro__right-user-comments1">Lee Stone</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="intro__right-block2">
+                            <img src="assets/images/intro-img2.png" alt="image">
+                            <div class="intro__right-comment2">
+                                <img src="assets/images/intro-user2.png" alt="image">
+                                <div class="intro__right-user-data">
+                                    <h3 class="intro__right-username2">Mia Potter</h3>
+                                    <p class="intro__right-user-comments2">Digital creator</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- /.intro__right -->
+                </div> <!-- /.intro__inner -->
+            </div> <!-- /.container -->
+        </div> <!-- /.intro -->
+        <div class="intro__footer">
+            <div class="intro__footer-img">
+                <img src="assets/images/introFooter-img1.png" alt="image">
+                <img src="assets/images/introFooter-img2.png" alt="image">
+                <img src="assets/images/introFooter-img3.png" alt="image">
+                <img src="assets/images/introFooter-img4.png" alt="image">
+                <img src="assets/images/introFooter-img5.png" alt="image">
+                <img src="assets/images/introFooter-img6.png" alt="image">
+                <img src="assets/images/introFooter-img7.png" alt="image">
+                <img src="assets/images/introFooter-img8.png" alt="image">
+                <img src="assets/images/introFooter-img9.png" alt="image">
+                <img src="assets/images/introFooter-img10.png" alt="image">
+            </div>
+        </div> <!-- /.intro__footer -->
+        
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about__header">
+                    <h2 class="about__header-title">Hey there, we are</h2>
+                    <h3 class="about__header-subtitle">Suspendisse sem neque, auctor a elementum ut, varius vel leo. Donec diam<br>arcu, porta et magna at</h3>
+                    <nav class="about__nav">
+                        <a class="about__nav-link" href="#">Jack</a>
+                        <a class="about__nav-link" href="#">Suni</a>
+                        <a class="about__nav-link" href="#">Colin</a>
+                    </nav>
+                </div> <!-- /.about__header -->
+                <div class="about__main">
+                    <div class="about__block">
+                        <img src="assets/images/about-img1.png" alt="image">
+                        <div class="about__block-content">
+                            <h3 class="about__block-suptitle">Digital Artist</h3>
+                            <h2 class="about__block-title">Pellentesque blandit<br>in quam rhoncus</h2>
+                            <p class="about__block-text">Suspendisse ante mauris, volutpat congue sem ac, ultrices tempor lorem. Nullam eget vehicula tellus, ac consectetur urna. Mauris tincidunt, libero id ultrices tincidunt, mi leo pharetra dolor, sed luctus dui ipsum et augue. Integer non quam feugiat, porttitor libero a, tempor neque. Nulla ac orci mauris. Quisque nisi nisl, rutrum ac diam et, semper commodo quam</p>
+                        </div>
+                    </div>
+                    <div class="about__block2">
+                        <img src="assets/images/about-img2.png" alt="image">
+                        <div class="about__block2-content">
+                            <h3 class="about__block2-suptitle">our work</h3>
+                            <h2 class="about__block2-title">“Um… what's going on here?”</h2>
+                            <p class="about__block2-text">Nulla facilisi. Praesent molestie diam eu enim aliquet pellentesque. Vestibulum consectetur vestibulum tristique. Sed purus neque, maximus fermentum bibendum et, porta in sapien.</p>
+                            <a class="about__block2-link" href="#">About Codx</a>
+                        </div>
+                    </div>
+                    <div class="about__block3">
+                        <div class="about__block3-content">
+                            <ol class="about__block3-list">
+                                <li class="about__block3-item">
+                                    <p class="about__block3-id  about__block3-id--emerald">01</p>
+                                    <p class="about__block3-title">Motion Graphic</p>
+                                    <p class="about__block3-subtitle">Suspendisse sem neque, auctor a elementum ut, varius vel leo. Donec diam arcu, porta et magna at</p>
+                                </li>
+                                <li class="about__block3-item">
+                                    <p class="about__block3-id  about__block3-id--pink">02</p>
+                                    <p class="about__block3-title">Digital Illustration</p>
+                                    <p class="about__block3-subtitle">Suspendisse sem neque, auctor a elementum ut, varius vel leo. Donec diam arcu, porta et magna at</p>
+                                </li>
+                                <li class="about__block3-item">
+                                    <p class="about__block3-id  about__block3-id--yellow">03</p>
+                                    <p class="about__block3-title">Photography</p>
+                                    <p class="about__block3-subtitle">Suspendisse sem neque, auctor a elementum ut, varius vel leo. Donec diam arcu, porta et magna at</p>
+                                </li>
+                            </ol>
+                        </div>
+                        <img src="assets/images/about-img3.png" alt="image">
+                    </div>
+                </div> <!-- /.about__main -->
+            </div> <!-- /.container -->
+            <div class="about__footer">
+                <div class="about__footer-content">
+                    <h2 class="about__footer-title">Join Us and Discover our most precious NFT</h2>
+                    <p class="about__footer-subtitle">Suspendisse sem neque, auctor a elementum ut, varius vel leo. Donec diam arcu, porta et magna at</p>
+                </div>
+                <img src="assets/images/about-img4.png" alt="image">
+            </div> <!-- /.about__footer -->
+        </section> <!-- about -->
+        
+        <section class="content" id="content">
+            <div class="container">
+                <div class="content__inner">
+                    <h2 class="content__title">Browse by Collections</h2>
+                    <div class="content__collections">
+                        <div class="content__collections-block">
+                            <a href="#">
+                                <img src="assets/images/nft1.png" alt="image">
+                            </a>
+                            <a class="content__collections-title" href="#">Collectibles</a>
+                        </div>
+                        <div class="content__collections-block">
+                            <a href="#">
+                                <img src="assets/images/nft2.png" alt="image">
+                            </a>
+                            <a class="content__collections-title" href="#">Art</a>
+                        </div>
+                        <div class="content__collections-block">
+                            <a href="#">
+                                <img src="assets/images/nft3.png" alt="image">
+                            </a>
+                            <a class="content__collections-title" href="#">Photography</a>
+                        </div>
+                    </div> <!-- /.content__collections -->
+                    <a class="content__link" href="#">View all</a>
+                    <h2 class="content__title">Top NFT</h2>
+                    <div class="content__top">
+                        <div class="content__top-block">
+                            <a href="#">
+                                <img class="content__top-img" src="assets/images/nft4.png" alt="image">
+                            </a>
+                            <div class="content__top-inner">
+                                <div class="content__top-left">
+                                    <a class="content__top-title" href="">White Bear</a>
+                                    <p class="content__top-id">#54385</p>
+                                </div>
+                                <div class="content__top-right">
+                                    <a class="content__top-watch" href="#">
+                                        <svg width="16" height="11" viewBox="0 0 16 11">
+                                            <path d="M8.16838 0.568359C4.71405 0.568359 1.76405 2.71696 0.568848 5.74986C1.76405 8.78275 4.71405 10.9313 8.16838 10.9313C11.6227 10.9313 14.5727 8.78275 15.7679 5.74986C14.5727 2.71696 11.6227 0.568359 8.16838 0.568359ZM8.16838 9.20422C6.26159 9.20422 4.71405 7.65667 4.71405 5.74986C4.71405 3.84306 6.26159 2.29552 8.16838 2.29552C10.0751 2.29552 11.6227 3.84306 11.6227 5.74986C11.6227 7.65667 10.0751 9.20422 8.16838 9.20422ZM8.16838 3.67726C7.02154 3.67726 6.09578 4.60301 6.09578 5.74986C6.09578 6.89671 7.02154 7.82245 8.16838 7.82245C9.31526 7.82245 10.241 6.89671 10.241 5.74986C10.241 4.60301 9.31526 3.67726 8.16838 3.67726Z" fill="black" fill-opacity="0.7"/>
+                                        </svg>
+                                    </a>
+                                    <a class="content__top-lock" href="#">
+                                        <svg width="12" height="16" viewBox="0 0 12 16">
+                                            <path d="M10.2114 5.72779H9.48217V4.26929C9.48217 2.25657 7.84866 0.623047 5.83593 0.623047C3.82321 0.623047 2.1897 2.25657 2.1897 4.26929V5.72779H1.46045C0.658276 5.72779 0.00195312 6.38411 0.00195312 7.18628V14.4788C0.00195312 15.281 0.658276 15.9373 1.46045 15.9373H10.2114C11.0136 15.9373 11.6699 15.281 11.6699 14.4788V7.18628C11.6699 6.38411 11.0136 5.72779 10.2114 5.72779ZM5.83593 12.2911C5.03376 12.2911 4.37744 11.6347 4.37744 10.8326C4.37744 10.0304 5.03376 9.37402 5.83593 9.37402C6.63811 9.37402 7.29443 10.0304 7.29443 10.8326C7.29443 11.6347 6.63811 12.2911 5.83593 12.2911ZM3.64819 5.72779V4.26929C3.64819 3.05874 4.62538 2.08155 5.83593 2.08155C7.04649 2.08155 8.02368 3.05874 8.02368 4.26929V5.72779H3.64819Z" fill="white"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div> <!-- content__top-block -->
+        
+                        <div class="content__top-block">
+                            <a href="#">
+                                <img class="content__top-img" src="assets/images/nft5.png" alt="image">
+                            </a>
+                            <div class="content__top-inner">
+                                <div class="content__top-left">
+                                    <a class="content__top-title" href="">Happy Luca</a>
+                                    <p class="content__top-id">#54395</p>
+                                </div>
+                                <div class="content__top-right">
+                                    <a class="content__top-watch" href="#">
+                                        <svg width="16" height="11" viewBox="0 0 16 11">
+                                            <path d="M8.16838 0.568359C4.71405 0.568359 1.76405 2.71696 0.568848 5.74986C1.76405 8.78275 4.71405 10.9313 8.16838 10.9313C11.6227 10.9313 14.5727 8.78275 15.7679 5.74986C14.5727 2.71696 11.6227 0.568359 8.16838 0.568359ZM8.16838 9.20422C6.26159 9.20422 4.71405 7.65667 4.71405 5.74986C4.71405 3.84306 6.26159 2.29552 8.16838 2.29552C10.0751 2.29552 11.6227 3.84306 11.6227 5.74986C11.6227 7.65667 10.0751 9.20422 8.16838 9.20422ZM8.16838 3.67726C7.02154 3.67726 6.09578 4.60301 6.09578 5.74986C6.09578 6.89671 7.02154 7.82245 8.16838 7.82245C9.31526 7.82245 10.241 6.89671 10.241 5.74986C10.241 4.60301 9.31526 3.67726 8.16838 3.67726Z" fill="black" fill-opacity="0.7"/>
+                                        </svg>
+                                    </a>
+                                    <a class="content__top-lock" href="#">
+                                        <svg width="12" height="16" viewBox="0 0 12 16">
+                                            <path d="M10.2114 5.72779H9.48217V4.26929C9.48217 2.25657 7.84866 0.623047 5.83593 0.623047C3.82321 0.623047 2.1897 2.25657 2.1897 4.26929V5.72779H1.46045C0.658276 5.72779 0.00195312 6.38411 0.00195312 7.18628V14.4788C0.00195312 15.281 0.658276 15.9373 1.46045 15.9373H10.2114C11.0136 15.9373 11.6699 15.281 11.6699 14.4788V7.18628C11.6699 6.38411 11.0136 5.72779 10.2114 5.72779ZM5.83593 12.2911C5.03376 12.2911 4.37744 11.6347 4.37744 10.8326C4.37744 10.0304 5.03376 9.37402 5.83593 9.37402C6.63811 9.37402 7.29443 10.0304 7.29443 10.8326C7.29443 11.6347 6.63811 12.2911 5.83593 12.2911ZM3.64819 5.72779V4.26929C3.64819 3.05874 4.62538 2.08155 5.83593 2.08155C7.04649 2.08155 8.02368 3.05874 8.02368 4.26929V5.72779H3.64819Z" fill="white"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div> <!-- content__top-block -->
+        
+                        <div class="content__top-block">
+                            <a href="#">
+                                <img class="content__top-img" src="assets/images/nft6.png" alt="image">
+                            </a>
+                            <div class="content__top-inner">
+                                <div class="content__top-left">
+                                    <a class="content__top-title" href="">Dodo</a>
+                                    <p class="content__top-id">#54376</p>
+                                </div>
+                                <div class="content__top-right">
+                                    <a class="content__top-watch" href="#">
+                                        <svg width="16" height="11" viewBox="0 0 16 11">
+                                            <path d="M8.16838 0.568359C4.71405 0.568359 1.76405 2.71696 0.568848 5.74986C1.76405 8.78275 4.71405 10.9313 8.16838 10.9313C11.6227 10.9313 14.5727 8.78275 15.7679 5.74986C14.5727 2.71696 11.6227 0.568359 8.16838 0.568359ZM8.16838 9.20422C6.26159 9.20422 4.71405 7.65667 4.71405 5.74986C4.71405 3.84306 6.26159 2.29552 8.16838 2.29552C10.0751 2.29552 11.6227 3.84306 11.6227 5.74986C11.6227 7.65667 10.0751 9.20422 8.16838 9.20422ZM8.16838 3.67726C7.02154 3.67726 6.09578 4.60301 6.09578 5.74986C6.09578 6.89671 7.02154 7.82245 8.16838 7.82245C9.31526 7.82245 10.241 6.89671 10.241 5.74986C10.241 4.60301 9.31526 3.67726 8.16838 3.67726Z" fill="black" fill-opacity="0.7"/>
+                                        </svg>
+                                    </a>
+                                    <a class="content__top-lock" href="#">
+                                        <svg width="12" height="16" viewBox="0 0 12 16">
+                                            <path d="M10.2114 5.72779H9.48217V4.26929C9.48217 2.25657 7.84866 0.623047 5.83593 0.623047C3.82321 0.623047 2.1897 2.25657 2.1897 4.26929V5.72779H1.46045C0.658276 5.72779 0.00195312 6.38411 0.00195312 7.18628V14.4788C0.00195312 15.281 0.658276 15.9373 1.46045 15.9373H10.2114C11.0136 15.9373 11.6699 15.281 11.6699 14.4788V7.18628C11.6699 6.38411 11.0136 5.72779 10.2114 5.72779ZM5.83593 12.2911C5.03376 12.2911 4.37744 11.6347 4.37744 10.8326C4.37744 10.0304 5.03376 9.37402 5.83593 9.37402C6.63811 9.37402 7.29443 10.0304 7.29443 10.8326C7.29443 11.6347 6.63811 12.2911 5.83593 12.2911ZM3.64819 5.72779V4.26929C3.64819 3.05874 4.62538 2.08155 5.83593 2.08155C7.04649 2.08155 8.02368 3.05874 8.02368 4.26929V5.72779H3.64819Z" fill="white"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div> <!-- content__top-block -->
+        
+                        <div class="content__top-block">
+                            <a href="#">
+                                <img class="content__top-img" src="assets/images/nft7.png" alt="image">
+                            </a>
+                            <div class="content__top-inner">
+                                <div class="content__top-left">
+                                    <a class="content__top-title" href="">Nano Nano</a>
+                                    <p class="content__top-id">#54348</p>
+                                </div>
+                                <div class="content__top-right">
+                                    <a class="content__top-watch" href="#">
+                                        <svg width="16" height="11" viewBox="0 0 16 11">
+                                            <path d="M8.16838 0.568359C4.71405 0.568359 1.76405 2.71696 0.568848 5.74986C1.76405 8.78275 4.71405 10.9313 8.16838 10.9313C11.6227 10.9313 14.5727 8.78275 15.7679 5.74986C14.5727 2.71696 11.6227 0.568359 8.16838 0.568359ZM8.16838 9.20422C6.26159 9.20422 4.71405 7.65667 4.71405 5.74986C4.71405 3.84306 6.26159 2.29552 8.16838 2.29552C10.0751 2.29552 11.6227 3.84306 11.6227 5.74986C11.6227 7.65667 10.0751 9.20422 8.16838 9.20422ZM8.16838 3.67726C7.02154 3.67726 6.09578 4.60301 6.09578 5.74986C6.09578 6.89671 7.02154 7.82245 8.16838 7.82245C9.31526 7.82245 10.241 6.89671 10.241 5.74986C10.241 4.60301 9.31526 3.67726 8.16838 3.67726Z" fill="black" fill-opacity="0.7"/>
+                                        </svg>
+                                    </a>
+                                    <a class="content__top-lock" href="#">
+                                        <svg width="12" height="16" viewBox="0 0 12 16">
+                                            <path d="M10.2114 5.72779H9.48217V4.26929C9.48217 2.25657 7.84866 0.623047 5.83593 0.623047C3.82321 0.623047 2.1897 2.25657 2.1897 4.26929V5.72779H1.46045C0.658276 5.72779 0.00195312 6.38411 0.00195312 7.18628V14.4788C0.00195312 15.281 0.658276 15.9373 1.46045 15.9373H10.2114C11.0136 15.9373 11.6699 15.281 11.6699 14.4788V7.18628C11.6699 6.38411 11.0136 5.72779 10.2114 5.72779ZM5.83593 12.2911C5.03376 12.2911 4.37744 11.6347 4.37744 10.8326C4.37744 10.0304 5.03376 9.37402 5.83593 9.37402C6.63811 9.37402 7.29443 10.0304 7.29443 10.8326C7.29443 11.6347 6.63811 12.2911 5.83593 12.2911ZM3.64819 5.72779V4.26929C3.64819 3.05874 4.62538 2.08155 5.83593 2.08155C7.04649 2.08155 8.02368 3.05874 8.02368 4.26929V5.72779H3.64819Z" fill="white"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div> <!-- content__top-block -->
+        
+                        <div class="content__top-block">
+                            <a href="#">
+                                <img class="content__top-img" src="assets/images/nft8.png" alt="image">
+                            </a>
+                            <div class="content__top-inner">
+                                <div class="content__top-left">
+                                    <a class="content__top-title" href="">Zombie</a>
+                                    <p class="content__top-id">#54337</p>
+                                </div>
+                                <div class="content__top-right">
+                                    <a class="content__top-watch" href="#">
+                                        <svg width="16" height="11" viewBox="0 0 16 11">
+                                            <path d="M8.16838 0.568359C4.71405 0.568359 1.76405 2.71696 0.568848 5.74986C1.76405 8.78275 4.71405 10.9313 8.16838 10.9313C11.6227 10.9313 14.5727 8.78275 15.7679 5.74986C14.5727 2.71696 11.6227 0.568359 8.16838 0.568359ZM8.16838 9.20422C6.26159 9.20422 4.71405 7.65667 4.71405 5.74986C4.71405 3.84306 6.26159 2.29552 8.16838 2.29552C10.0751 2.29552 11.6227 3.84306 11.6227 5.74986C11.6227 7.65667 10.0751 9.20422 8.16838 9.20422ZM8.16838 3.67726C7.02154 3.67726 6.09578 4.60301 6.09578 5.74986C6.09578 6.89671 7.02154 7.82245 8.16838 7.82245C9.31526 7.82245 10.241 6.89671 10.241 5.74986C10.241 4.60301 9.31526 3.67726 8.16838 3.67726Z" fill="black" fill-opacity="0.7"/>
+                                        </svg>
+                                    </a>
+                                    <a class="content__top-lock" href="#">
+                                        <svg width="12" height="16" viewBox="0 0 12 16">
+                                            <path d="M10.2114 5.72779H9.48217V4.26929C9.48217 2.25657 7.84866 0.623047 5.83593 0.623047C3.82321 0.623047 2.1897 2.25657 2.1897 4.26929V5.72779H1.46045C0.658276 5.72779 0.00195312 6.38411 0.00195312 7.18628V14.4788C0.00195312 15.281 0.658276 15.9373 1.46045 15.9373H10.2114C11.0136 15.9373 11.6699 15.281 11.6699 14.4788V7.18628C11.6699 6.38411 11.0136 5.72779 10.2114 5.72779ZM5.83593 12.2911C5.03376 12.2911 4.37744 11.6347 4.37744 10.8326C4.37744 10.0304 5.03376 9.37402 5.83593 9.37402C6.63811 9.37402 7.29443 10.0304 7.29443 10.8326C7.29443 11.6347 6.63811 12.2911 5.83593 12.2911ZM3.64819 5.72779V4.26929C3.64819 3.05874 4.62538 2.08155 5.83593 2.08155C7.04649 2.08155 8.02368 3.05874 8.02368 4.26929V5.72779H3.64819Z" fill="white"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div> <!-- content__top-block -->
+        
+                        <div class="content__top-block">
+                            <a href="#">
+                                <img class="content__top-img" src="assets/images/nft9.png" alt="image">
+                            </a>
+                            <div class="content__top-inner">
+                                <div class="content__top-left">
+                                    <a class="content__top-title" href="">Pink Devil</a>
+                                    <p class="content__top-id">#54392</p>
+                                </div>
+                                <div class="content__top-right">
+                                    <a class="content__top-watch" href="#">
+                                        <svg width="16" height="11" viewBox="0 0 16 11">
+                                            <path d="M8.16838 0.568359C4.71405 0.568359 1.76405 2.71696 0.568848 5.74986C1.76405 8.78275 4.71405 10.9313 8.16838 10.9313C11.6227 10.9313 14.5727 8.78275 15.7679 5.74986C14.5727 2.71696 11.6227 0.568359 8.16838 0.568359ZM8.16838 9.20422C6.26159 9.20422 4.71405 7.65667 4.71405 5.74986C4.71405 3.84306 6.26159 2.29552 8.16838 2.29552C10.0751 2.29552 11.6227 3.84306 11.6227 5.74986C11.6227 7.65667 10.0751 9.20422 8.16838 9.20422ZM8.16838 3.67726C7.02154 3.67726 6.09578 4.60301 6.09578 5.74986C6.09578 6.89671 7.02154 7.82245 8.16838 7.82245C9.31526 7.82245 10.241 6.89671 10.241 5.74986C10.241 4.60301 9.31526 3.67726 8.16838 3.67726Z" fill="black" fill-opacity="0.7"/>
+                                        </svg>
+                                    </a>
+                                    <a class="content__top-lock" href="#">
+                                        <svg width="12" height="16" viewBox="0 0 12 16">
+                                            <path d="M10.2114 5.72779H9.48217V4.26929C9.48217 2.25657 7.84866 0.623047 5.83593 0.623047C3.82321 0.623047 2.1897 2.25657 2.1897 4.26929V5.72779H1.46045C0.658276 5.72779 0.00195312 6.38411 0.00195312 7.18628V14.4788C0.00195312 15.281 0.658276 15.9373 1.46045 15.9373H10.2114C11.0136 15.9373 11.6699 15.281 11.6699 14.4788V7.18628C11.6699 6.38411 11.0136 5.72779 10.2114 5.72779ZM5.83593 12.2911C5.03376 12.2911 4.37744 11.6347 4.37744 10.8326C4.37744 10.0304 5.03376 9.37402 5.83593 9.37402C6.63811 9.37402 7.29443 10.0304 7.29443 10.8326C7.29443 11.6347 6.63811 12.2911 5.83593 12.2911ZM3.64819 5.72779V4.26929C3.64819 3.05874 4.62538 2.08155 5.83593 2.08155C7.04649 2.08155 8.02368 3.05874 8.02368 4.26929V5.72779H3.64819Z" fill="white"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div> <!-- content__top-block -->
+                    </div> <!-- /.content__top -->
+                    <a class="content__link" href="#">View all</a>
+                </div>
+            </div> <!-- /.container -->
+        </section> <!-- content -->
+        
+        <div class="faq">
+            <div class="container">
+                <div class="faq__inner">
+                    <h2 class="faq__title">FAQ</h2>
+                    <details class="faq__details">
+                        <summary class="faq__summary">
+                            <p class="faq__summary-title">Donec posuere massa nec arcu scelerisque, blandit mattis justo blandit</p>
+                            <svg width="28" height="17" viewBox="0 0 28 17">
+                                <g clip-path="url(#clip0_1_839)">
+                                <path d="M1.06067 1.93945L15.0607 15.9394" stroke="#79AF98" stroke-width="3"/>
+                                <path d="M12.9393 15.9394L26.9393 1.93945" stroke="#79AF98" stroke-width="3"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_1_839">
+                                <rect width="28" height="17" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </summary>
+                        <p class="faq__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur blanditiis qui ducimus suscipit nemo, sed, rem odit nam harum quidem accusamus doloribus, autem est voluptate numquam? Error aut cupiditate voluptates?</p>
+                    </details> <!-- details .faq__details -->
+        
+                    <details class="faq__details">
+                        <summary class="faq__summary">
+                            <p class="faq__summary-title">Quisque at justo semper, faucibus eros sit amet, scelerisque lorem.</p>
+                            <svg width="28" height="17" viewBox="0 0 28 17">
+                                <g clip-path="url(#clip0_1_839)">
+                                <path d="M1.06067 1.93945L15.0607 15.9394" stroke="#79AF98" stroke-width="3"/>
+                                <path d="M12.9393 15.9394L26.9393 1.93945" stroke="#79AF98" stroke-width="3"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_1_839">
+                                <rect width="28" height="17" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </summary>
+                        <p class="faq__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur blanditiis qui ducimus suscipit nemo, sed, rem odit nam harum quidem accusamus doloribus, autem est voluptate numquam? Error aut cupiditate voluptates?</p>
+                    </details> <!-- details .faq__details -->
+        
+                    <details class="faq__details">
+                        <summary class="faq__summary">
+                            <p class="faq__summary-title">Nulla eget justo at eros varius consequat.</p>
+                            <svg width="28" height="17" viewBox="0 0 28 17">
+                                <g clip-path="url(#clip0_1_839)">
+                                <path d="M1.06067 1.93945L15.0607 15.9394" stroke="#79AF98" stroke-width="3"/>
+                                <path d="M12.9393 15.9394L26.9393 1.93945" stroke="#79AF98" stroke-width="3"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_1_839">
+                                <rect width="28" height="17" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </summary>
+                        <p class="faq__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur blanditiis qui ducimus suscipit nemo, sed, rem odit nam harum quidem accusamus doloribus, autem est voluptate numquam? Error aut cupiditate voluptates?</p>
+                    </details> <!-- details .faq__details -->
+        
+                    <details class="faq__details">
+                        <summary class="faq__summary">
+                            <p class="faq__summary-title">Vivamus non nibh quis massa laoreet semper et eu quam</p>
+                            <svg width="28" height="17" viewBox="0 0 28 17">
+                                <g clip-path="url(#clip0_1_839)">
+                                <path d="M1.06067 1.93945L15.0607 15.9394" stroke="#79AF98" stroke-width="3"/>
+                                <path d="M12.9393 15.9394L26.9393 1.93945" stroke="#79AF98" stroke-width="3"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_1_839">
+                                <rect width="28" height="17" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </summary>
+                        <p class="faq__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur blanditiis qui ducimus suscipit nemo, sed, rem odit nam harum quidem accusamus doloribus, autem est voluptate numquam? Error aut cupiditate voluptates?</p>
+                    </details> <!-- details .faq__details -->
+        
+                    <details class="faq__details">
+                        <summary class="faq__summary">
+                            <p class="faq__summary-title">Morbi quis nisi tempus, mollis turpis ut, mollis massa.</p>
+                            <svg width="28" height="17" viewBox="0 0 28 17">
+                                <g clip-path="url(#clip0_1_839)">
+                                <path d="M1.06067 1.93945L15.0607 15.9394" stroke="#79AF98" stroke-width="3"/>
+                                <path d="M12.9393 15.9394L26.9393 1.93945" stroke="#79AF98" stroke-width="3"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_1_839">
+                                <rect width="28" height="17" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </summary>
+                        <p class="faq__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur blanditiis qui ducimus suscipit nemo, sed, rem odit nam harum quidem accusamus doloribus, autem est voluptate numquam? Error aut cupiditate voluptates?</p>
+                    </details> <!-- details .faq__details -->
+                </div><!-- /.faq__inner -->
+            </div> <!-- /.container -->
+        </div> <!-- faq -->
+    </main>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="footer">
+                <div class="footer__top">
+                    <div class="footer__top-slot1">
+                        <div class="footer__top-slot">
+                            <img class="footer__logo" src="assets/images/logo.svg" alt="logo">
+                            <h2 class="footer__social-title">Join the community</h2>
+                            <ul class="social">
+                                <li class="social__item">
+                                    <a class="social__link" href="#">
+                                        <svg width="30" height="30" viewBox="0 0 18 18">
+                                            <path d="M17.171 4.93696C16.5958 5.19245 15.9773 5.36485 15.3279 5.4422C15.9906 5.04532 16.4992 4.41651 16.7389 3.6668C16.1188 4.03469 15.4324 4.3018 14.7012 4.44582C14.116 3.82215 13.2819 3.43239 12.3591 3.43239C10.5869 3.43239 9.15012 4.8692 9.15012 6.64136C9.15012 6.89282 9.17847 7.13761 9.2332 7.37247C6.56624 7.23883 4.20157 5.9614 2.6189 4.0198C2.34277 4.49357 2.18449 5.04472 2.18449 5.63304C2.18449 6.74629 2.75098 7.72841 3.612 8.30404C3.08613 8.28715 2.59112 8.14297 2.15859 7.9025C2.1583 7.91583 2.1583 7.92933 2.1583 7.94314C2.1583 9.49762 3.26444 10.7946 4.73255 11.0896C4.46325 11.1628 4.17972 11.2021 3.88702 11.2021C3.68004 11.2021 3.47913 11.1821 3.28317 11.1445C3.6917 12.4193 4.87673 13.3471 6.28068 13.373C5.18245 14.2338 3.79895 14.7467 2.29533 14.7467C2.03644 14.7467 1.78111 14.7314 1.52997 14.7019C2.95033 15.6126 4.63689 16.1437 6.44902 16.1437C12.3516 16.1437 15.579 11.2539 15.579 7.01341C15.579 6.8745 15.5762 6.73575 15.57 6.59824C16.1968 6.14587 16.7411 5.58066 17.171 4.93696Z" fill="black"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a class="social__link" href="#">
+                                        <svg width="30" height="30" viewBox="0 0 18 18">
+                                            <path d="M8.95241 5.30159C6.73019 5.30159 4.88892 7.11111 4.88892 9.36508C4.88892 11.6191 6.69844 13.4286 8.95241 13.4286C11.2064 13.4286 13.0159 11.5873 13.0159 9.36508C13.0159 7.14286 11.1746 5.30159 8.95241 5.30159ZM8.95241 11.9683C7.52384 11.9683 6.34923 10.7937 6.34923 9.36508C6.34923 7.93651 7.52384 6.76191 8.95241 6.76191C10.381 6.76191 11.5556 7.93651 11.5556 9.36508C11.5556 10.7937 10.381 11.9683 8.95241 11.9683Z" fill="black"/>
+                                            <path d="M13.1745 6.12699C13.683 6.12699 14.0952 5.7148 14.0952 5.20635C14.0952 4.6979 13.683 4.28572 13.1745 4.28572C12.6661 4.28572 12.2539 4.6979 12.2539 5.20635C12.2539 5.7148 12.6661 6.12699 13.1745 6.12699Z" fill="black"/>
+                                            <path d="M15.5555 2.8254C14.7301 1.96826 13.5555 1.52381 12.2222 1.52381H5.68252C2.92062 1.52381 1.07935 3.36508 1.07935 6.12699V12.6349C1.07935 14 1.52379 15.1746 2.41268 16.0317C3.26982 16.8571 4.41268 17.2698 5.71427 17.2698H12.1905C13.5555 17.2698 14.6984 16.8254 15.5238 16.0317C16.3809 15.2064 16.8254 14.0317 16.8254 12.6667V6.12699C16.8254 4.79365 16.3809 3.6508 15.5555 2.8254ZM15.3651 12.6667C15.3651 13.6508 15.0793 14.4444 14.5079 14.9841C13.9365 15.5238 13.1428 15.8095 12.1905 15.8095H5.71427C4.76189 15.8095 3.96823 15.5238 3.39681 14.9841C2.82538 14.4127 2.53966 13.619 2.53966 12.6349V6.12699C2.53966 5.1746 2.82538 4.38095 3.39681 3.80953C3.93649 3.26984 4.76189 2.98413 5.71427 2.98413H12.2539C13.2063 2.98413 14 3.26984 14.5714 3.84127C15.1111 4.4127 15.4286 5.20635 15.4286 6.12699V12.6667H15.3651Z" fill="black"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a class="social__link" href="#">
+                                        <svg width="30" height="30" viewBox="0 0 18 18">
+                                            <path d="M12.8365 6.90212H10.4092V5.31018C10.4092 4.71233 10.8054 4.57295 11.0845 4.57295C11.3629 4.57295 12.7974 4.57295 12.7974 4.57295V1.94469L10.4384 1.93548C7.81965 1.93548 7.2237 3.89572 7.2237 5.15016V6.90212H5.70923V9.61039H7.2237C7.2237 13.0861 7.2237 17.2739 7.2237 17.2739H10.4092C10.4092 17.2739 10.4092 13.0448 10.4092 9.61039H12.5586L12.8365 6.90212Z" fill="black"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div> <!-- /.footer__top-slot -->
+        
+                        <div class="footer__top-slotLink">
+                            <div class="footer__top-slot">
+                                <h2 class="footer__nav-title">Site</h2>
+                                <ul class="nav__list  nav__list--footer">
+                                    <li class="nav__item  nav__item--footer">
+                                        <a class="nav__link  nav__link--footer" href="#about">About us</a>
+                                    </li>
+                                    <li class="nav__item  nav__item--footer">
+                                        <a class="nav__link  nav__link--footer" href="#content">NFTs</a>
+                                    </li>
+                                    <li class="nav__item  nav__item--footer">
+                                        <a class="nav__link  nav__link--footer" href="#footer">Contact</a>
+                                    </li>
+                                </ul> <!-- /.nav__list -->
+                            </div> <!-- /.footer__top-slot -->
+            
+                            <div class="footer__top-slot">
+                                <h2 class="footer__nav-title">Utility</h2>
+                                <ul class="nav__list  nav__list--footer">
+                                    <li class="nav__item  nav__item--footer">
+                                        <a class="nav__link  nav__link--footer" href="#">Style guide</a>
+                                    </li>
+                                    <li class="nav__item  nav__item--footer">
+                                        <a class="nav__link  nav__link--footer" href="#">Lincensing</a>
+                                    </li>
+                                    <li class="nav__item  nav__item--footer">
+                                        <a class="nav__link  nav__link--footer" href="#">404</a>
+                                    </li>
+                                </ul> <!-- /.nav__list -->
+                            </div> <!-- /.footer__top-slot -->
+                        </div>
+                    </div> <!-- /.footer__top-slot1 -->
+    
+                    <div class="footer__top-slot2">
+                        <h2 class="footer__top-title">Stay in the loop</h2>
+                        <p class="footer__top-subtitle">Suspendisse sem neque, auctor a elementum ut, varius vel leo. Donec diam arcu, porta et magna at</p>
+                        <form action="/">
+                            <input class="form__email" type="email" placeholder="Your email address">
+                            <button class="form__button" type="button">Sign up</button>
+                        </form>
+                    </div> <!-- /.footer__top-slot2 -->
+                </div> <!-- /.footer__top -->
+                <div class="footer__bottom">
+                    <h2 class="footer__bottom-copyright">© 2022 All rights reserved.</h2>
+                    <h2 class="footer__bottom-authors">Created By <a href="#">Udesly</a> Powered By <a href="#">Webflow</a></h2>
+                </div>
+            </div> <!-- /.footer -->
+        </div> <!-- /.container -->
+    </footer>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
