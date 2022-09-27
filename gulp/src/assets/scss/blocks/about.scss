@@ -1,0 +1,128 @@
+.about {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about__header-title {
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 64px;
+    text-align: center;
+    letter-spacing: 0.48px;
+
+    margin: 128px 0 25px 0;
+
+    @include breakpoint($tablet-bp) {
+        font-size: 50px;
+        line-height: 42px;
+        margin: 100px 0 20px 0;
+    }
+
+    @include breakpoint($mobile-bp) {
+        font-size: 30px;
+
+        margin: 70px 0 15px 0;
+    }
+}
+
+.about__header-subtitle {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.48px;
+}
+
+.about__footer {
+    width: 100%;
+    max-width: 1440px;
+
+    background: $aquamarine;
+
+    position: relative;
+
+    margin-top: 204px;
+
+    img {
+        width: 100%;
+        height: auto;
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    @include breakpoint($notebook-bp) {
+        margin-top: 150px;
+    }
+
+    @include breakpoint($tablet-bp) {
+        margin-top: 120px;
+    }
+}
+
+.about__footer-content {
+    padding: 39px 0 136px 120px;
+
+    @include breakpoint($notebook-bp) {
+        padding: 29px 0 105px 120px;
+    }
+
+    @include breakpoint($tablet-bp) {
+        padding: 10px 0 18px 25px;
+    }
+}
+
+.about__footer-title {
+    width: 100%;
+    max-width: 657px;
+
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 64px;
+    letter-spacing: 0.48px;
+
+    @include breakpoint($notebook-bp) {
+        font-size: 42px;
+        line-height: 50px;
+    }
+
+    @include breakpoint($tablet-bp) {
+        font-size: 22px;
+        line-height: 25px;
+    }
+
+    @include breakpoint($mobile-bp) {
+        font-size: 17px;
+        line-height: 17px;
+    }
+}
+
+.about__footer-subtitle {
+    width: 100%;
+    max-width: 565px;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.48px;
+
+    margin-top: 30px;
+
+    @include breakpoint($notebook-bp) {
+        font-size: 18px;
+        line-height: 23px;
+        margin-top: 28px;
+    }
+
+    @include breakpoint($tablet-bp) {
+        font-size: 9px;
+        line-height: 10px;
+        margin-top: 5px;
+    }
+
+    @include breakpoint($mobile-bp) {
+        margin-top: 2px;
+    }
+}
